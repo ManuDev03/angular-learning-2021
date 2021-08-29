@@ -40,6 +40,8 @@ export class EmployeeDashboardComponent implements OnInit {
       let ref = document.getElementById('cancel')
       ref?.click()
       this.empform.reset()
+      this.get_emp()
+
     },
     err=>{
       alert("something went wrong")
@@ -52,4 +54,12 @@ export class EmployeeDashboardComponent implements OnInit {
 
     })
   }
+  del_emp(row){
+    this._service.deleteEmployee(row.id).subscribe(res=>{
+      alert('employee deleted')
+      this.get_emp()
+    })
+  }
+
+
 }

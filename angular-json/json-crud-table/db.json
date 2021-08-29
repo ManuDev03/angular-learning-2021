@@ -1,11 +1,6 @@
 {
   "posts": [
     {
-      "id": 1,
-      "title": "json-server",
-      "author": "typicode"
-    },
-    {
       "id": 2,
       "firstname": "manu",
       "lastname": "p Rajan",
@@ -20,47 +15,9 @@
       "email": "max03@gmail.com",
       "mobile": "23456789",
       "salary": "23456"
-    },
-    {
-      "id": 4,
-      "firstname": "maverik",
-      "lastname": "manu",
-      "email": "maverik03@gmail.com",
-      "mobile": "76868997898",
-      "salary": "353674676"
-    },
-    {
-      "id": 5,
-      "firstname": "nn",
-      "lastname": "nnn",
-      "email": "nnn03@gmail.com",
-      "mobile": "34567890",
-      "salary": "12345678"
-    },
-    {
-      "id": 6,
-      "firstname": "manu",
-      "lastname": "mmm",
-      "email": "moo03@gmail.com",
-      "mobile": "5678988",
-      "salary": "12333"
-    },
-    {
-      "id": 7,
-      "firstname": "sasi",
-      "lastname": "sasi",
-      "email": "sasi03@gmail.com",
-      "mobile": "898989",
-      "salary": "151535136"
     }
   ],
-  "comments": [
-    {
-      "id": 1,
-      "body": "some comment",
-      "postId": 1
-    }
-  ],
+  "comments": [],
   "profile": {
     "name": "typicode"
   }
