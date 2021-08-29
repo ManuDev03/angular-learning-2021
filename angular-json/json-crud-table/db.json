@@ -4,6 +4,38 @@
       "id": 1,
       "title": "json-server",
       "author": "typicode"
+    },
+    {
+      "id": 2,
+      "firstname": "manu",
+      "lastname": "p Rajan",
+      "email": "manu03@gmail.com",
+      "mobile": "987873525566",
+      "salary": "15165617"
+    },
+    {
+      "id": 3,
+      "firstname": "max",
+      "lastname": "manu",
+      "email": "max03@gmail.com",
+      "mobile": "23456789",
+      "salary": "23456"
+    },
+    {
+      "id": 4,
+      "firstname": "maverik",
+      "lastname": "manu",
+      "email": "maverik03@gmail.com",
+      "mobile": "76868997898",
+      "salary": "353674676"
+    },
+    {
+      "id": 5,
+      "firstname": "nn",
+      "lastname": "nnn",
+      "email": "nnn03@gmail.com",
+      "mobile": "34567890",
+      "salary": "12345678"
     }
   ],
   "comments": [
