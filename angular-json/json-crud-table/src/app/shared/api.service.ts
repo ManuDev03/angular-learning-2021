@@ -14,8 +14,8 @@ export class ApiService {
     }
 
     // get employee details
-    getEmployee(data : any) {
-        return this._http.get<any>("http://localhost:3000/posts", data).pipe(map((res : any) => {
+    getEmployee() {
+        return this._http.get<any>("http://localhost:3000/posts").pipe(map((res : any) => {
             return res
         }))
     }

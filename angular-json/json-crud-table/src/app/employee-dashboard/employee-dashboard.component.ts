@@ -13,6 +13,7 @@ export class EmployeeDashboardComponent implements OnInit {
   constructor(private _service:ApiService) { }
   empform:FormGroup
   employeeModelObj: EmployeeModel = new EmployeeModel()
+  empData:any
 
   ngOnInit(): void {
     this.empform = new FormGroup({
@@ -22,6 +23,7 @@ export class EmployeeDashboardComponent implements OnInit {
       'mobile': new FormControl(null,Validators.required),
       'salary': new FormControl(null,Validators.required)   
     })
+    this.get_emp()
   }
   add_emp(){}
   post_emp(){
@@ -41,6 +43,13 @@ export class EmployeeDashboardComponent implements OnInit {
     },
     err=>{
       alert("something went wrong")
+    })
+  }
+
+  get_emp(){
+    this._service.getEmployee().subscribe(res=>{ 
+      this.empData = res
+
     })
   }
 }
