@@ -1,5 +1,5 @@
 import { Component, OnInit } from '@angular/core';
-import { FormGroup,FormControl} from '@angular/forms'
+import { FormGroup,FormControl,Validators} from '@angular/forms'
 
 @Component({
   selector: 'app-employee-dashboard',
@@ -13,16 +13,15 @@ export class EmployeeDashboardComponent implements OnInit {
 
   ngOnInit(): void {
     this.empform = new FormGroup({
-      'firstname': new FormControl(''),
-      'lastname': new FormControl(''),
-      'email': new FormControl(''),
-      'mobileNo': new FormControl(''),
-      'salary': new FormControl('')
-
+      'firstname': new FormControl(null,Validators.required),
+      'lastname': new FormControl(null,Validators.required),
+      'email': new FormControl(null,[Validators.required,Validators.email]),
+      'mobileNo': new FormControl(null,Validators.required),
+      'salary': new FormControl(null,Validators.required)   
     })
   }
   add_emp(){
-    
+
   }
 
 }
